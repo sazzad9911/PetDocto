@@ -3,7 +3,7 @@ import {View} from 'react-native';
 const DoctorDashboard = () => {
     return (
         <View>
-            
+            akashr
         </View>
     );
 };
