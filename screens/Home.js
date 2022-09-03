@@ -1,11 +1,13 @@
 import React from 'react';
-import {View,Text} from 'react-native';
+import { View, Text, SafeAreaView, ScrollView} from 'react-native';
 
 const Home = () => {
     return (
-        <View>
-            <Text>hghg</Text>
-        </View>
+        <ScrollView>
+            <View>
+                <Text>hghg</Text>
+            </View>
+        </ScrollView>
     );
 };
 
