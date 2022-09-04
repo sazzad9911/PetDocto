@@ -1,10 +1,11 @@
 import React from 'react';
-import {View,Text,ScrollView} from 'react-native';
+
+import { View, Text, SafeAreaView, ScrollView} from 'react-native';
 
 const Home = () => {
     return (
         <ScrollView>
-            
+
         </ScrollView>
     );
 };

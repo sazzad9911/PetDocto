@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
 import StackRoute from './routes/StackRoute';
@@ -15,15 +15,11 @@ export default function App() {
     return null;
   }
   return (
-    <StackRoute/>
+    <SafeAreaView style={{flex:1,}}>
+      <StackRoute/>
+    </SafeAreaView>
+    
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+

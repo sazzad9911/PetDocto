@@ -8,8 +8,6 @@ import { MaterialIcons } from '@expo/vector-icons';
 import Button from '../components/button/Button';
 import SideButton from '../components/button/SideButton';
 
-
-
 const SignIn = (props) => {
     const [PhoneNumber, setPhoneNumber] = React.useState(null);
     const [Password, setPassword] = React.useState(null);
@@ -42,7 +40,6 @@ const SignIn = (props) => {
         </View>
         <SideButton {...props} onPress={() => {props.navigation.navigate('SignUp')}} buttonName='Register' />
         </View>
-
     );
 };
 
