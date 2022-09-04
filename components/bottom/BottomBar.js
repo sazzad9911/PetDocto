@@ -15,19 +15,23 @@ const BottomBar = (props) => {
                 <FontAwesome name="stethoscope" size={50} color="white" />
             </TouchableOpacity>
 
-            <TouchableOpacity style={{flex:1}}>
+            <TouchableOpacity style={{flex:1}} 
+            onPress={() => {props.navigation.navigate('Calender')}}>
                 <MaterialCommunityIcons name="briefcase-clock" size={45} color="white" />
             </TouchableOpacity>
 
-            <TouchableOpacity style={{flex:1}}>
+            <TouchableOpacity style={{flex:1}} 
+            onPress={() => {props.navigation.navigate('Home')}}>
                 <Ionicons name="md-home" size={45} color="white" />
             </TouchableOpacity>
 
-            <TouchableOpacity style={{flex:1}}>
+            <TouchableOpacity style={{flex:1}}
+            onPress={() => {props.navigation.navigate('History')}}>
                 <Ionicons name="document-text" size={45} color="white" />
             </TouchableOpacity>
 
-            <TouchableOpacity style={{flex:1}}>
+            <TouchableOpacity style={{flex:1}}
+            onPress={() => {props.navigation.navigate('Menu')}}>
                 <Ionicons name="md-menu" size={55} color="white" />
             </TouchableOpacity>
         </View>

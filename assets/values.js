@@ -16,3 +16,9 @@ export const HomeText =(language) =>{
     }
     return 'শীর্ষ 10 ডক্টর'
 };
+export const ListText =(language) =>{
+    if(language=='en'){
+        return 'Every Doctors'
+    }
+    return 'সকল ডাক্তার'
+};
