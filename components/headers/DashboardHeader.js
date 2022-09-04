@@ -1,7 +1,7 @@
 import React from 'react';
 import {
     View, Text, ScrollView,
-    StyleSheet, TouchableOpacity, Image,
+    StyleSheet, TouchableOpacity, Image, SafeAreaView
 } from 'react-native';
 import { FontAwesome,MaterialIcons } from '@expo/vector-icons';
 import profile from "/Users/macbookpro/Documents/GitHub/PetDocto/assets/Profile.jpeg"
@@ -10,13 +10,15 @@ import profile from "/Users/macbookpro/Documents/GitHub/PetDocto/assets/Profile.
 
 const DashboardHeader = () => {
     return (
-        <ScrollView >
             <View style={styles.Box}>
-                <View>
+                <View style={{flex:1, marginLeft:20}}>
                     <Text>Logo</Text>
                 </View>
-                <TouchableOpacity>
-                    <FontAwesome name="bell" size={30} color="#CFE313" />
+                <TouchableOpacity style={{flexDirection:'row'}}>
+                    <FontAwesome name="bell" size={30} color="#FFC300" />
+                    <View style={styles.Notification}>
+                        <Text style={{color:'white'}}>2</Text>
+                    </View>
                 </TouchableOpacity>
                 <View style={styles.ViewAmount}>
                     <View style={styles.ViewAmountBoxIcon}>
@@ -28,7 +30,6 @@ const DashboardHeader = () => {
                 <Image source={profile} style={{ width: 60, height: 60, borderRadius:30 }} /> 
                 </TouchableOpacity>
             </View>
-        </ScrollView>
     );
 };
 
@@ -36,20 +37,18 @@ export default DashboardHeader;
 
 const styles = StyleSheet.create({
     Box: {
-        marginTop: 30,
-        margin: 20,
         flexDirection: 'row',
-        justifyContent:'center',
         alignItems:'center',
+        display:'flex',
     },
     ViewAmount:{
         height:30,
-        marginLeft:15,
-        backgroundColor:'#5719E8',
+        backgroundColor:'#7267D1',
         borderRadius:20,
         justifyContent:'center',
         alignItems:'center',
-        flexDirection:'row'
+        flexDirection:'row',
+        marginLeft:20,
     },
     ViewAmountBoxIcon:{
         height:25,
@@ -68,9 +67,20 @@ const styles = StyleSheet.create({
         height:65,
         width:65,
         borderRadius:32.5,
-        marginLeft:20,
-        backgroundColor:'#5719E8',
+        marginLeft:10,
+        backgroundColor:'#7267D1',
         justifyContent:'center',
         alignItems:'center',
+        marginRight:20,
     },
+    Notification:{
+        backgroundColor:'red',
+        position:'absolute',
+        height:15,
+        width:15,
+        borderRadius:7.5,
+        justifyContent:'center',
+        alignItems:'center',
+        marginLeft:15,
+    }
 });
