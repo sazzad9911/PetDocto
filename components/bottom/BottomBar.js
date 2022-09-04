@@ -7,10 +7,11 @@ import {
     FontAwesome, MaterialCommunityIcons,
     Ionicons,
 } from '@expo/vector-icons';
-const BottomBar = () => {
+const BottomBar = (props) => {
     return (
         <View style={styles.Box}>
-            <TouchableOpacity style={{flex:1,marginLeft:20}}>
+            <TouchableOpacity style={{flex:1,marginLeft:20}} 
+            onPress={() => {props.navigation.navigate('DoctorList')}}>
                 <FontAwesome name="stethoscope" size={50} color="white" />
             </TouchableOpacity>
 

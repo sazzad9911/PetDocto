@@ -1,10 +1,10 @@
 import React from 'react';
-import {Scrollbar} from 'react-native';
+import {Scrollbar,ScrollView,Text} from 'react-native';
 
 const DoctorList = () => {
     return (
         <ScrollView>
-            
+            <Text>akash</Text>
         </ScrollView>
     );
 };
