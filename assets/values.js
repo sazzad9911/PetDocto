@@ -28,3 +28,9 @@ export const CelenderText =(language) =>{
     }
     return 'ডক্টর দেখানোর সময়সূচি'
 };
+export const HistoryText =(language) =>{
+    if(language=='en'){
+        return 'Consultant History'
+    }
+    return 'পরামর্শদাতা ইতিহাস'
+};
