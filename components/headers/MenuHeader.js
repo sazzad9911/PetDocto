@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import { AntDesign, MaterialIcons, FontAwesome } from '@expo/vector-icons';
 import { HistoryText } from '../../assets/values';
-import profile from "/Users/macbookpro/Documents/GitHub/PetDocto/assets/Profile.jpeg"
+import profile from "../../assets/Profile.jpeg"
 
 
 const MenuHeader = () => {
