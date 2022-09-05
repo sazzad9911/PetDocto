@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import { AntDesign, MaterialIcons,FontAwesome } from '@expo/vector-icons';
+import { ListText } from '../../assets/values';
 
 
 const ListHeader = () => {
@@ -11,7 +12,7 @@ const ListHeader = () => {
             </TouchableOpacity>
 
             <View>
-                <Text style={{fontSize:25, color:'white', marginLeft:10,}}>সকল ডাক্তার</Text>
+                <Text style={{fontSize:25, color:'white', marginLeft:10,}}>{ListText('')}</Text>
             </View>
 
             <TouchableOpacity style={{flexDirection:'row', marginLeft:10}}>
