@@ -16,6 +16,24 @@ export const HomeText =(language) =>{
     }
     return 'শীর্ষ 10 ডক্টর'
 };
+export const ListText =(language) =>{
+    if(language=='en'){
+        return 'Every Doctors'
+    }
+    return 'সকল ডাক্তার'
+};
+export const CelenderText =(language) =>{
+    if(language=='en'){
+        return 'Doctor Appointment Schedule'
+    }
+    return 'ডক্টর দেখানোর সময়সূচি'
+};
+export const HistoryText =(language) =>{
+    if(language=='en'){
+        return 'Consultant History'
+    }
+    return 'পরামর্শদাতা ইতিহাস'
+};
 export const Top10Doctor =(language) =>{
     if(language=='en'){
         return 'Top 10 Doctors'
