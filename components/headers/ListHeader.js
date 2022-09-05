@@ -11,10 +11,10 @@ const ListHeader = () => {
             </TouchableOpacity>
 
             <View>
-                <Text style={{fontSize:30, color:'white', marginLeft:20,}}>সকল ডাক্তার</Text>
+                <Text style={{fontSize:25, color:'white', marginLeft:10,}}>সকল ডাক্তার</Text>
             </View>
 
-            <TouchableOpacity style={{flexDirection:'row', marginLeft:25}}>
+            <TouchableOpacity style={{flexDirection:'row', marginLeft:10}}>
                     <FontAwesome name="bell" size={30} color="#FFC300" />
                     <View style={styles.Notification}>
                         <Text style={{color:'#7267D1'}}>2</Text>
@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
         justifyContent:'center',
         alignItems:'center',
         flexDirection:'row',
-        marginLeft:20,
+        marginLeft:10,
     },
     ViewAmountBoxIcon:{
         height:25,

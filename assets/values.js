@@ -22,3 +22,9 @@ export const ListText =(language) =>{
     }
     return 'সকল ডাক্তার'
 };
+export const CelenderText =(language) =>{
+    if(language=='en'){
+        return 'Doctor Appointment Schedule'
+    }
+    return 'ডক্টর দেখানোর সময়সূচি'
+};
