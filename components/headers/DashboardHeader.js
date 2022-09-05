@@ -4,7 +4,7 @@ import {
     StyleSheet, TouchableOpacity, Image, SafeAreaView
 } from 'react-native';
 import { FontAwesome,MaterialIcons } from '@expo/vector-icons';
-import profile from "/Users/macbookpro/Documents/GitHub/PetDocto/assets/Profile.jpeg"
+import Profile from '../../assets/Profile.jpeg'
 
 
 
@@ -27,7 +27,7 @@ const DashboardHeader = () => {
                     <Text style={styles.ViewAmountText}>500</Text>
                 </View>
                 <TouchableOpacity  style={styles.Profile}>
-                <Image source={profile} style={{ width: 60, height: 60, borderRadius:30 }} /> 
+                <Image source={Profile} style={{ width: 60, height: 60, borderRadius:30 }} /> 
                 </TouchableOpacity>
             </View>
     );

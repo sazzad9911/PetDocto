@@ -34,3 +34,27 @@ export const HistoryText =(language) =>{
     }
     return 'পরামর্শদাতা ইতিহাস'
 };
+export const Top10Doctor =(language) =>{
+    if(language=='en'){
+        return 'Top 10 Doctors'
+    }
+    return 'শীর্ষ ১০ ডাক্তার'
+}
+export const Number =(language) =>{
+    if(language=='en'){
+        return '5'
+    }
+    return '৫'
+}
+export const OnlineDr =(language) =>{
+    if(language=='en'){
+        return 'Online'
+    }
+    return 'অনলাইনে ডাক্তার রয়েছেন'
+}
+export const DrNumber =(language) =>{
+    if(language=='en'){
+        return '65 Doctors'
+    }
+    return '৬৫ জন'
+}
