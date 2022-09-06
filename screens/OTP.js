@@ -9,6 +9,7 @@ const OTP = (props) => {
     return (
         <View style={{
             alignItems:'center'
+            
         }}>
         <View style={{
             marginTop:'30%'
