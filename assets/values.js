@@ -58,3 +58,33 @@ export const DrNumber =(language) =>{
     }
     return '৬৫ জন'
 }
+export const SeeAll =(language) =>{
+    if(language=='en'){
+        return 'See All'
+    }
+    return 'সব দেখুন'
+}
+export const SymptomsSolution =(language) =>{
+    if(language=='en'){
+        return 'Resolving common symptoms'
+    }
+    return 'সাধারন উপসর্গসমূহের সমাধান'
+}
+export const CommonMed =(language) =>{
+    if(language=='en'){
+        return 'Common Medicines'
+    }
+    return 'সাধারন ওষুধ সম্পর্কে জানুন'
+}
+export const Disease =(language) =>{
+    if(language=='en'){
+        return 'Patients Problem: Has not been eating properly for some time. Besides, he does not play sports as before. When food is given, the smell dries up. '
+    }
+    return 'রোগীর সমস্যাঃ কিছুদিন ধরে ঠিকভাবে খাচ্ছে না। এছাড়া আগের মতো খেলাধুলা করে না। খাবার দিলে গন্ধ শুকে চলে যায়। '
+}
+export const PaidAmount =(language) =>{
+    if(language=='en'){
+        return '120 has been paid'
+    }
+    return '১২০ টাকা পরিশোধ করেছেন'
+}
