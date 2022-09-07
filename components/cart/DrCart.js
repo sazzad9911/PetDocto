@@ -11,7 +11,7 @@ function DrCart(props) {
     return (
         <TouchableOpacity style={{
             height: 180,
-            width: 180,
+            width: 160,
             backgroundColor: '#FFFFFFFF',
             shadowOffset: {
                 height: 1,
@@ -29,7 +29,7 @@ function DrCart(props) {
         }}>
             <Image style={{
                 height: 80,
-                width: 160,
+                width: 140,
                 borderRadius: 10
             }} source={{ uri: 'https://media.istockphoto.com/photos/portrait-of-male-doctor-in-white-coat-and-stethoscope-standing-in-picture-id1327024466?b=1&k=20&m=1327024466&s=170667a&w=0&h=vcw4Exhv4pkR8fMVLNXhNESaKq1HbYwJ1iElLlQBxI0=' }} />
             <Text style={[styles.mediumText, {

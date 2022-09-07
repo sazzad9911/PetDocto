@@ -9,11 +9,11 @@ function Search(props) {
     const navigation = useNavigation()
     return (
         <View style={{
-            alignItems:'center'
+            alignItems:'center',
         }}>
             <View style={{
                 height: 60,
-                width: '90%',
+                width: '100%',
                 flexDirection: 'row', 
                 justifyContent:'center'
 
@@ -29,11 +29,11 @@ function Search(props) {
                     flex: 4,
                     marginTop: 10,
                     justifyContent:'center',
-                    backgroundColor:'#D7D4F2'
+                    backgroundColor:'#e6eeff'
                 }}>
                     <TouchableOpacity style={{
-                        height: 40,
-                        width: 40,
+                        height: 35,
+                        width: 35,
                         borderRadius: 20,
                         backgroundColor: '#7267D1',
                         marginLeft: 5,
@@ -46,7 +46,7 @@ function Search(props) {
                             marginTop:5,
                             flex: 1,
 
-                        }} name="search" size={24} color='#FFFFFFFF' />
+                        }} name="search" size={24} color='#FFFFFF' />
                     </TouchableOpacity>
                     <TextInput onFocus={() => setValue(false)} onChange={setSearch} placeholder='Search' style={{
                         height: 50,
