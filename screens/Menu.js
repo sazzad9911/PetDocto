@@ -12,12 +12,12 @@ import {
 } from '@ant-design/react-native'
 
 
-const Menu = () => {
+const Menu = (props) => {
 
     return (
         <ScrollView>
             <View style={art.box}>
-                <TouchableOpacity style={art.select}>
+                <TouchableOpacity onPress={() => {props.navigation.navigate('Profile')}} style={art.select}>
                     <MaterialCommunityIcons style={{ marginRight: 10 }} name="account-cog" size={24} color="#7267D1" />
                     <Text style={styles.mediumText}>
                         Manage my account
@@ -29,8 +29,8 @@ const Menu = () => {
                         Recharge money
                     </Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={art.select}>
-                    <Foundation style={{ marginRight: 10 }} name="clipboard-notes" size={24} color="#7267D1" />
+                <TouchableOpacity onPress={() => {props.navigation.navigate('History')}} style={art.select}>
+                    <Foundation style={{ marginRight: 15 }} name="clipboard-notes" size={26} color="#7267D1" />
                     <Text style={styles.mediumText}>
                         Consultation and History
                     </Text>
@@ -45,20 +45,28 @@ const Menu = () => {
                         Language
                     </Text>
                     <Switch
-                        checkedChildren="开启"
-                        unCheckedChildren="关闭"
+                        checkedChildren="En"
+                        unCheckedChildren="বাং"
                         defaultChecked
                     />
                 </View>
                 <View style={art.select}>
-                    <Text style={[styles.mediumText, {}]}>
+                    <Text style={[styles.mediumText, {marginRight:'60%'}]}>
                         Theme
                     </Text>
+                    <List.Item extra={<Switch checked color="black" />}>
+                        color="red"
+                    </List.Item>
                 </View>
                 <View style={art.select}>
-                    <Text style={styles.mediumText}>
+                    <Text style={[styles.mediumText, { flex: 11 }]}>
                         Notification
                     </Text>
+                    <Switch
+                        checkedChildren="On"
+                        unCheckedChildren="Off"
+                        defaultChecked
+                    />
                 </View>
             </View>
             <View style={[art.box, { justifyContent: 'space-between' }]}>

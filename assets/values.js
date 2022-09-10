@@ -88,3 +88,15 @@ export const PaidAmount =(language) =>{
     }
     return '১২০ টাকা পরিশোধ করেছেন'
 }
+export const Today =(language) =>{
+    if(language=='en'){
+        return 'Sunday,7:30 pm'
+    }
+    return 'আজ রবিবার,এখন সময় সন্ধ্যা ৭ টা ৩০ মিনিট'
+}
+export const SelectPet =(language) =>{
+    if(language=='en'){
+        return 'Select your pet'
+    }
+    return 'আপনার পোষা প্রানীটি নির্ধারন করুন'
+}

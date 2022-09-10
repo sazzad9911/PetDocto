@@ -12,6 +12,10 @@ import MenuHeader from './../components/headers/MenuHeader';
 import CalenderHeader from './../components/headers/CalenderHeader';
 import ListHeader from './../components/headers/ListHeader';
 import HistoryHeader from './../components/headers/HistoryHeader';
+import Profile from "../screens/Profile";
+import DoctorProfile from "../screens/DoctorProfile";
+import Appointment from "../screens/Appointment";
+import AppointmentHeader from "../components/headers/AppointmentHeader";
 const Tab = createBottomTabNavigator();
 
 const TabRoute = () => {
@@ -22,6 +26,9 @@ const TabRoute = () => {
       <Tab.Screen options={{header:(props)=><ListHeader {...props}/>}} name="DoctorList" component={DoctorList} />
       <Tab.Screen options={{header:(props)=><HistoryHeader {...props}/>}} name="History" component={History} />
       <Tab.Screen options={{header:(props)=><MenuHeader {...props}/>}} name="Menu" component={Menu} />
+      <Tab.Screen options={{headerShown:false}} name="Profile" component={Profile} />
+      <Tab.Screen options={{headerShown:false}} name="Doctor Profile" component={DoctorProfile} />
+      <Tab.Screen options={{header:(props)=><AppointmentHeader {...props}/>}} name="Appointment" component={Appointment} />
     </Tab.Navigator>
   );
 };

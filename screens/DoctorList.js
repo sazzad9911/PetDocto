@@ -3,7 +3,6 @@ import { Scrollbar, ScrollView, Text, View } from 'react-native';
 import Search from '../components/Search';
 import Circle from '../components/cart/Circle';
 import DrCart from '../components/cart/DrCart';
-DrCart
 const DoctorList = () => {
     return (
         <ScrollView showsVerticalScrollIndicator={false} style={{
