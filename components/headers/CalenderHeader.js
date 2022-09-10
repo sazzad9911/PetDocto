@@ -8,10 +8,10 @@ const CalenderHeader = () => {
         <View style={styles.Box}>
 
             <TouchableOpacity style={styles.IconView}>
-                <AntDesign name="left" size={30} color="#7267D1" />
+                <AntDesign name="left" size={24} color="#7267D1" />
             </TouchableOpacity>
 
-            <Text style={{ fontSize: 25, color: 'white', marginLeft: 10, }}>
+            <Text style={{ fontSize: 25, color: 'white', marginLeft: 10,textAlign:'center' }}>
                
                 {CelenderText('bn')}
                 </Text>
@@ -25,20 +25,22 @@ export default CalenderHeader;
 const styles = StyleSheet.create({
     Box: {
         flexDirection: 'row',
-        alignItems: 'center',
+        paddingTop:35,
         display: 'flex',
-        height: 60,
-        marginLeft: 5,
-        marginRight: 5,
+        height: 80,
+        
         backgroundColor: '#7267D1',
+       
     },
     IconView: {
-        height: 35,
-        width: 35,
-        borderRadius: 17.5,
+        height: 30,
+        width: 30,
+        borderRadius:15,
         backgroundColor: 'white',
         marginLeft: 20,
         alignItems: 'center',
         justifyContent:'center',
+
+        marginTop:5
     },
 });

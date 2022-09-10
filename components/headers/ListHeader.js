@@ -16,15 +16,15 @@ const ListHeader = () => {
             </View>
 
             <TouchableOpacity style={{flexDirection:'row', marginLeft:10}}>
-                    <FontAwesome name="bell" size={30} color="#FFC300" />
+                    <FontAwesome name="bell" size={25} color="#FFC300" />
                     <View style={styles.Notification}>
-                        <Text style={{color:'#7267D1'}}>2</Text>
+                        <Text style={{color:'#7267D1',textAlign:'center',fontSize:8,fontWeight:'bold'}}>2</Text>
                     </View>
                 </TouchableOpacity>
 
             <View style={styles.ViewAmount}>
                     <View style={styles.ViewAmountBoxIcon}>
-                    <MaterialIcons name="attach-money" size={24} color="#5719E8" />
+                    <MaterialIcons name="attach-money" size={20} color="#5719E8" />
                     </View>
                     <Text style={styles.ViewAmountText}>500</Text>
                 </View>
@@ -39,15 +39,14 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         display: 'flex',
-        height: 60,
-        marginLeft: 5,
-        marginRight: 5,
+        height: 80,
         backgroundColor: '#7267D1',
+        paddingTop:20
     },
     IconView: {
-        height: 35,
-        width: 35,
-        borderRadius: 17.5,
+        height: 30,
+        width: 30,
+        borderRadius: 15,
         backgroundColor: 'white',
         marginLeft: 20,
         alignItems: 'center',
@@ -56,9 +55,8 @@ const styles = StyleSheet.create({
     ViewAmount:{
         height:30,
         backgroundColor:'white',
-        borderRadius:20,
-        justifyContent:'center',
-        alignItems:'center',
+        borderRadius:15,
+       
         flexDirection:'row',
         marginLeft:10,
     },
@@ -75,6 +73,7 @@ const styles = StyleSheet.create({
         marginLeft:10,
         marginRight:10,
         color:'#7267D1',
+        textAlign:'center'
     },
     Notification:{
         backgroundColor:'white',
@@ -85,5 +84,6 @@ const styles = StyleSheet.create({
         justifyContent:'center',
         alignItems:'center',
         marginLeft:15,
+        textAlign:'center'
     }
 });

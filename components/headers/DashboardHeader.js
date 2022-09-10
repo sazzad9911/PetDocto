@@ -1,11 +1,7 @@
 import React from 'react';
-import {
-    View, Text, ScrollView,
-    StyleSheet, TouchableOpacity, Image, SafeAreaView
-} from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity, Image, } from 'react-native';
 import { FontAwesome,MaterialIcons } from '@expo/vector-icons';
 import Profile from '../../assets/Profile.jpeg'
-
 
 
 const DashboardHeader = () => {
@@ -20,14 +16,15 @@ const DashboardHeader = () => {
                         <Text style={{color:'white'}}>2</Text>
                     </View>
                 </TouchableOpacity>
+                <View style={{width:10}}></View>
                 <View style={styles.ViewAmount}>
                     <View style={styles.ViewAmountBoxIcon}>
-                    <MaterialIcons name="attach-money" size={24} color="#5719E8" />
+                    <MaterialIcons name="attach-money" size={22} color="#5719E8" />
                     </View>
                     <Text style={styles.ViewAmountText}>500</Text>
                 </View>
                 <TouchableOpacity  style={styles.Profile}>
-                <Image source={Profile} style={{ width: 60, height: 60, borderRadius:30 }} /> 
+                <Image source={Profile} style={{ width: 52, height: 52, borderRadius:26 }} /> 
                 </TouchableOpacity>
             </View>
     );
@@ -40,6 +37,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems:'center',
         display:'flex',
+        marginTop:30,
     },
     ViewAmount:{
         height:30,
@@ -48,30 +46,30 @@ const styles = StyleSheet.create({
         justifyContent:'center',
         alignItems:'center',
         flexDirection:'row',
-        marginLeft:20,
-    },
+         },
     ViewAmountBoxIcon:{
-        height:25,
+
         width:25,
         marginLeft:5,
         borderRadius:12.5,
         backgroundColor:'white',
     },
     ViewAmountText:{
-        fontSize:25,
+        fontSize:20,
         marginLeft:10,
         marginRight:10,
         color:'white',
     },
     Profile:{
-        height:65,
-        width:65,
+        height:55,
+        width:55,
         borderRadius:32.5,
         marginLeft:10,
-        backgroundColor:'#7267D1',
+        borderWidth:2,
         justifyContent:'center',
         alignItems:'center',
         marginRight:20,
+        borderColor:'#7267D1'
     },
     Notification:{
         backgroundColor:'red',

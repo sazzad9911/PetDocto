@@ -15,9 +15,7 @@ const Home = (props) => {
 
         }}>
 
-            <View style={{
-                marginTop: '10%'
-            }}>
+            <View>
                 <Search />
             </View>
             <View style={{

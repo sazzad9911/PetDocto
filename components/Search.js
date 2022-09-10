@@ -11,36 +11,9 @@ function Search(props) {
         <View style={{
             alignItems:'center',
         }}>
-            <View style={{
-                height: 60,
-                width: '100%',
-                flexDirection: 'row', 
-                justifyContent:'center'
-
-
-            }}>
-                <View style={{
-                    height: 45,
-                    alignItems: 'center',
-                    width: '100%',
-                    borderWidth: 1,
-                    borderRadius: 25,
-                    flexDirection: 'row',
-                    flex: 4,
-                    marginTop: 10,
-                    justifyContent:'center',
-                    backgroundColor:'#e6eeff'
-                }}>
-                    <TouchableOpacity style={{
-                        height: 35,
-                        width: 35,
-                        borderRadius: 20,
-                        backgroundColor: '#7267D1',
-                        marginLeft: 5,
-                        alignItems: 'center',
-                        
-
-                    }}>
+            <View style={art.searchView}>
+                <View style={art.searchBox}>
+                    <TouchableOpacity style={art.searchButton}>
                         <Ionicons style={{
                             
                             marginTop:5,
@@ -48,16 +21,7 @@ function Search(props) {
 
                         }} name="search" size={24} color='#FFFFFF' />
                     </TouchableOpacity>
-                    <TextInput onFocus={() => setValue(false)} onChange={setSearch} placeholder='Search' style={{
-                        height: 50,
-                        borderRadius: 25,
-                        width: '70%',
-                        flex: 4,
-                        padding: 10,
-
-
-
-                    }}>
+                    <TextInput onFocus={() => setValue(false)} onChange={setSearch} placeholder='Search' style={art.inputText}>
 
                     </TextInput>
 
@@ -71,3 +35,37 @@ function Search(props) {
 }
 
 export default Search;
+const art = StyleSheet.create ({
+inputText:{
+    height: 50,
+    borderRadius: 25,
+    width: '70%',
+    flex: 4,
+    padding: 10
+},
+searchButton:{
+    height: 35,
+    width: 35,
+    borderRadius: 20,
+    backgroundColor: '#7267D1',
+    marginLeft: 5,
+    alignItems: 'center',
+},
+searchBox:{
+    height: 45,
+    alignItems: 'center',
+    width: '100%',
+    borderRadius: 25,
+    flexDirection: 'row',
+    flex: 4,
+    marginTop: 10,
+    justifyContent:'center',
+    backgroundColor:'#e6eeff'
+},
+searchView:{
+    height: 60,
+    width: '100%',
+    flexDirection: 'row', 
+    justifyContent:'center',
+}
+})

@@ -9,9 +9,7 @@ const DoctorList = () => {
             marginLeft: 10,
             marginTop:10,
         }}>
-            <View style={{
-                marginTop: '10%'
-            }}>
+            <View>
                 <Search />
             </View>
             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
