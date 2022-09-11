@@ -46,8 +46,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         display: 'flex',
         height: 60,
-        marginLeft: 5,
-        marginRight: 5,
+        
         backgroundColor: '#7267D1',
         borderRadius: 15,
     },

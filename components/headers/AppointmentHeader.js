@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 import { styles } from '../../assets/styles';
 
+
 const AppointmentHeader = () => {
     return (
 
@@ -13,6 +14,7 @@ const AppointmentHeader = () => {
                 <Text style={[styles.largeText, { color: '#fff' }]}>Appointment </Text>
 
             </View>
+            
         </View>
     );
 };
@@ -25,8 +27,8 @@ const art = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         display: 'flex',
-        height: 60,
-        marginTop: 30,
+        height: 80,
+        paddingTop:30,
         backgroundColor: '#7267D1',
         paddingHorizontal: 20
 

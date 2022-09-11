@@ -56,9 +56,10 @@ const styles = StyleSheet.create({
         height:30,
         backgroundColor:'white',
         borderRadius:15,
-       
+       alignItems:'center',
         flexDirection:'row',
         marginLeft:10,
+        justifyContent:'center'
     },
     ViewAmountBoxIcon:{
         height:25,
@@ -69,8 +70,8 @@ const styles = StyleSheet.create({
         borderColor:' #7267D1',
     },
     ViewAmountText:{
-        fontSize:25,
-        marginLeft:10,
+        fontSize:20,
+        
         marginRight:10,
         color:'#7267D1',
         textAlign:'center'
