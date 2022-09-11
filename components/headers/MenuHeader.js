@@ -11,10 +11,10 @@ const MenuHeader = () => {
             <View style={styles.Box}>
                 <TouchableOpacity style={styles.Profile}>
                     <View style={styles.ProfileView}>
-                        <Image source={profile} style={{ width: 63, height: 63, borderRadius: 30 }} />
+                        <Image source={profile} style={{ width:53, height:53, borderRadius:26.5 }} />
                     </View>
 
-                    <View style={{ justifyContent: 'center', marginLeft: 10 }}>
+                    <View style={{ justifyContent: 'center', }}>
                         <Text style={{ fontSize: 20, fontWeight: 'bold' }}>Naymul Islam</Text>
                         <Text>01855779058</Text>
                     </View>
@@ -39,23 +39,27 @@ const styles = StyleSheet.create({
         height: 100,
         marginLeft: 5,
         marginRight: 5,
+        paddingTop:20
     },
     Profile: {
-        height: 70,
-        width: 220,
+        height:55,
+        width:220,
         backgroundColor: '#DED1E9',
-        marginLeft: 20,
+        marginLeft:10,
         borderRadius: 35,
         flexDirection: 'row',
 
     },
     ProfileView: {
-        height: 70,
-        width: 70,
-        backgroundColor: '#7267D1',
-        borderRadius: 35,
-        justifyContent: 'center',
-        alignItems: 'center',
+        height:55,
+        width:55,
+        borderRadius:32.5,
+        
+        borderWidth:2,
+        justifyContent:'center',
+        alignItems:'center',
+        marginRight:10,
+        borderColor:'#7267D1'
     },
     ProfileLin: {
         height: 3,

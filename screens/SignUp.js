@@ -9,7 +9,6 @@ import Button from '../components/button/Button';
 import SideButton from '../components/button/SideButton';
 import { FontAwesome } from '@expo/vector-icons';
 import { Fontisto } from '@expo/vector-icons';
-import SignIn from './SignIn';
 
 const SignUp = (props) => {
     const [Name, setName] = React.useState(null);

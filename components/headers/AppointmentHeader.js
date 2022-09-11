@@ -3,21 +3,23 @@ import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 import { styles } from '../../assets/styles';
 
-const HistoryHeader = () => {
+
+const AppointmentHeader = () => {
     return (
 
         <View style={art.Box}>
-            <FontAwesome style={{ marginRight:10 }} name="chevron-circle-left" size={30} color="#fff" />
-            <View style={{alignItems:'center',justifyContent:'center'}}>
+            <FontAwesome style={{ marginRight: 40 }} name="chevron-circle-left" size={30} color="#fff" />
+            <View style={{alignItems:'center'}}>
 
-                <Text style={[styles.largeText, { color: '#fff',textAlign:'center' }]}>Consultant History </Text>
+                <Text style={[styles.largeText, { color: '#fff' }]}>Appointment </Text>
 
             </View>
+            
         </View>
     );
 };
 
-export default HistoryHeader;
+export default AppointmentHeader;
 
 
 const art = StyleSheet.create({
@@ -26,7 +28,7 @@ const art = StyleSheet.create({
         alignItems: 'center',
         display: 'flex',
         height: 80,
-        paddingTop: 30,
+        paddingTop:30,
         backgroundColor: '#7267D1',
         paddingHorizontal: 20
 

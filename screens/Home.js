@@ -8,16 +8,14 @@ import { styles } from '../assets/styles';
 import Circle from '../components/cart/Circle';
 import Square from '../components/cart/Square';
 
-const Home = () => {
+const Home = (props) => {
     return (
         <ScrollView showsVerticalScrollIndicator={false} style={{
             margin: 10,
 
         }}>
 
-            <View style={{
-                marginTop: '10%'
-            }}>
+            <View>
                 <Search />
             </View>
             <View style={{
@@ -42,7 +40,7 @@ const Home = () => {
                     </View>
                 </View>
                 <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-                    <DrCart />
+                    <DrCart  onPress={() => {props.navigation.navigate('Doctor Profile')}} />
                     <DrCart />
                     <DrCart />
                     <DrCart />

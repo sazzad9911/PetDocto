@@ -9,7 +9,7 @@ import { Number } from '../../assets/values';
 
 function DrCart(props) {
     return (
-        <TouchableOpacity style={{
+        <TouchableOpacity onPress={() => { props.onPress()}} style={{
             height: 180,
             width: 160,
             backgroundColor: '#FFFFFFFF',

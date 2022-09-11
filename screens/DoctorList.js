@@ -3,16 +3,13 @@ import { Scrollbar, ScrollView, Text, View } from 'react-native';
 import Search from '../components/Search';
 import Circle from '../components/cart/Circle';
 import DrCart from '../components/cart/DrCart';
-DrCart
 const DoctorList = () => {
     return (
         <ScrollView showsVerticalScrollIndicator={false} style={{
             marginLeft: 10,
             marginTop:10,
         }}>
-            <View style={{
-                marginTop: '10%'
-            }}>
+            <View style={{marginRight:10}}>
                 <Search />
             </View>
             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>

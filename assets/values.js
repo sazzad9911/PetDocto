@@ -88,3 +88,57 @@ export const PaidAmount =(language) =>{
     }
     return '১২০ টাকা পরিশোধ করেছেন'
 }
+export const Today =(language) =>{
+    if(language=='en'){
+        return 'Sunday,7:30 pm'
+    }
+    return 'আজ রবিবার,এখন সময় সন্ধ্যা ৭ টা ৩০ মিনিট'
+}
+export const SelectPet =(language) =>{
+    if(language=='en'){
+        return 'Select your pet'
+    }
+    return 'আপনার পোষা প্রানীটি নির্ধারন করুন'
+}
+export const Symptoms =(language) =>{
+    if(language=='en'){
+        return 'Write the symtoms'
+    }
+    return 'সংক্ষেপে প্রানীর সমস্যার বিবরন দিন'
+}
+export const VideoCall =(language) =>{
+    if(language=='en'){
+        return 'Video Call'
+    }
+    return 'ভিডিও কল'
+}
+export const AudioCall =(language) =>{
+    if(language=='en'){
+        return 'Audio Call'
+    }
+    return 'অডিও কল'
+}
+export const Prescription =(language) =>{
+    if(language=='en'){
+        return 'Prescription'
+    }
+    return 'প্রেস্ক্রিপশন'
+}
+export const MakeVideoCall =(language) =>{
+    if(language=='en'){
+        return 'Make a video call and discuss about your pets health'
+    }
+    return 'সরাসরি ডাক্তারের সাথে ভিডিও কলিং এর মাধ্যমে আপনার পোষা প্রানীর সমস্যার কথা বলতে পারবেন'
+}
+export const MakeAudioCall =(language) =>{
+    if(language=='en'){
+        return 'Make a video call and discuss about your pets health'
+    }
+    return 'সরাসরি ডাক্তারের সাথে অডিও কলিং এর মাধ্যমে আপনার পোষা প্রানীর সমস্যার কথা বলতে পারবেন'
+}
+export const MakePrescription =(language) =>{
+    if(language=='en'){
+        return 'Prescription'
+    }
+    return 'ডাক্তার রোগীর অবস্থা বিবেচনা করে প্রেস্ক্রিপশনে প্রয়োজনীয় ঔষধের নাম, এবং পরবর্তীতে করনীয় নিয়ম কানুন লিখে দিবেন।(ডাউনলোড করে নিতে পারবেন)'
+}
