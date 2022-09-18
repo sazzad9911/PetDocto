@@ -16,6 +16,10 @@ import Profile from "../screens/Profile";
 import DoctorProfile from "../screens/DoctorProfile";
 import Appointment from "../screens/Appointment";
 import AppointmentHeader from "../components/headers/AppointmentHeader";
+import Subscription from "../screens/Subscription";
+import SubscriptionHeader from "../components/headers/SubscriptionHeader";
+
+
 const Tab = createBottomTabNavigator();
 
 const TabRoute = () => {
@@ -29,6 +33,7 @@ const TabRoute = () => {
       <Tab.Screen options={{headerShown:false}} name="Profile" component={Profile} />
       <Tab.Screen options={{headerShown:false}} name="Doctor Profile" component={DoctorProfile} />
       <Tab.Screen options={{header:(props)=><AppointmentHeader {...props}/>}} name="Appointment" component={Appointment} />
+      <Tab.Screen options={{header:(props)=><SubscriptionHeader {...props}/>}} name="Subscription" component={Subscription} />
     </Tab.Navigator>
   );
 };

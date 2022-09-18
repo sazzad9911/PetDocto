@@ -26,7 +26,7 @@ const BottomBar = (props) => {
             </TouchableOpacity>
 
             <TouchableOpacity style={{flex:1}}
-            onPress={() => {props.navigation.navigate('History')}}>
+            onPress={() => {props.navigation.navigate('Subscription')}}>
                 <Ionicons name="document-text" size={45} color="white" />
             </TouchableOpacity>
 

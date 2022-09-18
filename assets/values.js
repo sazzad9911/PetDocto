@@ -142,3 +142,9 @@ export const MakePrescription =(language) =>{
     }
     return 'ডাক্তার রোগীর অবস্থা বিবেচনা করে প্রেস্ক্রিপশনে প্রয়োজনীয় ঔষধের নাম, এবং পরবর্তীতে করনীয় নিয়ম কানুন লিখে দিবেন।(ডাউনলোড করে নিতে পারবেন)'
 }
+export const SubscriptionHeaderTitle =(language) =>{
+    if(language=='en'){
+        return 'PetDocto Subscription Plan'
+    }
+    return 'পেটডক্টো সাবস্ক্রিপশন প্লান'
+}

@@ -162,7 +162,6 @@ const art = StyleSheet.create({
         backgroundColor: '#e6eeff',
         marginTop: 10,
         borderRadius: 10,
-        
         shadowOffset: {
             height: 1,
             width: 1,
