@@ -16,7 +16,9 @@ function DoctorProfile(props) {
                 marginHorizontal: 20
             }}>
                 <View style={art.circle}>
-                    <MaterialIcons name="arrow-back-ios" size={24} color="#ffffff" />
+                    <MaterialIcons onPress={()=>{
+                        props.navigation.goBack()
+                    }} name="arrow-back-ios" size={24} color="#ffffff" />
                 </View>
                 <View style={{ alignItems: 'center' }}>
                     <View style={art.profile}>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity,StatusBar } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 import { styles } from '../../assets/styles';
 import { SubscriptionHeaderTitle } from '../../assets/values';
@@ -8,6 +8,7 @@ const SubscriptionHeader = () => {
     return (
 
         <View style={art.Box}>
+            <StatusBar backgroundColor={'#7267D1'} barStyle='light-content'/>
             <FontAwesome style={{ marginRight:10 }} name="chevron-circle-left" size={30} color="#fff" />
             <View style={{alignItems:'center',justifyContent:'center'}}>
 
@@ -26,8 +27,7 @@ const art = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         display: 'flex',
-        height: 80,
-        paddingTop: 30,
+        height: 80, 
         backgroundColor: '#7267D1',
         paddingHorizontal: 20
 
