@@ -4,11 +4,13 @@ import { FontAwesome } from '@expo/vector-icons';
 import { styles } from '../../assets/styles';
 
 
-const AppointmentHeader = () => {
+const AppointmentHeader = (props) => {
     return (
 
         <View style={art.Box}>
-            <FontAwesome style={{ marginRight: 40 }} name="chevron-circle-left" size={30} color="#fff" />
+            <FontAwesome onPress={()=>{
+                        props.navigation.goBack()
+                    }}  style={{ marginRight: 40 }} name="chevron-circle-left" size={30} color="#fff" />
             <View style={{alignItems:'center'}}>
 
                 <Text style={[styles.largeText, { color: '#fff' }]}>Appointment </Text>

@@ -4,9 +4,9 @@ import { FontAwesome,MaterialIcons } from '@expo/vector-icons';
 import Profile from '../../assets/Profile.jpeg'
 
 
-const DashboardHeader = () => {
+const DashboardHeader = (props) => {
     return (
-            <View style={styles.Box}>
+            <View style={styles.container}>
                 <View style={{flex:1, marginLeft:20}}>
                     <Text>Logo</Text>
                 </View>
@@ -23,7 +23,7 @@ const DashboardHeader = () => {
                     </View>
                     <Text style={styles.ViewAmountText}>500</Text>
                 </View>
-                <TouchableOpacity  style={styles.Profile}>
+                <TouchableOpacity onPress={() => {props.navigation.navigate('Profile')}} style={styles.Profile}>
                 <Image source={Profile} style={{ width: 52, height: 52, borderRadius:26 }} /> 
                 </TouchableOpacity>
             </View>
@@ -33,11 +33,13 @@ const DashboardHeader = () => {
 export default DashboardHeader;
 
 const styles = StyleSheet.create({
-    Box: {
+    container: {
         flexDirection: 'row',
         alignItems:'center',
         display:'flex',
-        marginTop:30,
+        paddingVertical:5,
+        paddingTop:30,
+        
     },
     ViewAmount:{
         height:30,

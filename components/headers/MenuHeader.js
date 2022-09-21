@@ -5,11 +5,11 @@ import { HistoryText } from '../../assets/values';
 import profile from "../../assets/Profile.jpeg"
 
 
-const MenuHeader = () => {
+const MenuHeader = (props) => {
     return (
         <View>
-            <View style={styles.Box}>
-                <TouchableOpacity style={styles.Profile}>
+            <View  style={styles.dox}>
+                <TouchableOpacity onPress={() => {props.navigation.navigate('Profile')}} style={styles.Profile}>
                     <View style={styles.ProfileView}>
                         <Image source={profile} style={{ width:53, height:53, borderRadius:26.5 }} />
                     </View>
@@ -32,14 +32,14 @@ const MenuHeader = () => {
 export default MenuHeader;
 
 const styles = StyleSheet.create({
-    Box: {
+    dox: {
         flexDirection: 'row',
         alignItems: 'center',
         display: 'flex',
-        height: 100,
+       paddingVertical:5,
         marginLeft: 5,
         marginRight: 5,
-        paddingTop:20
+        paddingTop:30,
     },
     Profile: {
         height:55,

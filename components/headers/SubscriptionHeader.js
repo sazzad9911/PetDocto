@@ -4,12 +4,14 @@ import { FontAwesome } from '@expo/vector-icons';
 import { styles } from '../../assets/styles';
 import { SubscriptionHeaderTitle } from '../../assets/values';
  
-const SubscriptionHeader = () => {
+const SubscriptionHeader = (props) => {
     return (
 
-        <View style={art.Box}>
+        <View style={art.box}>
             <StatusBar backgroundColor={'#7267D1'} barStyle='light-content'/>
-            <FontAwesome style={{ marginRight:10 }} name="chevron-circle-left" size={30} color="#fff" />
+            <FontAwesome onPress={()=>{
+                        props.navigation.goBack()
+                    }} style={{ marginRight:10 }} name="chevron-circle-left" size={30} color="#fff" />
             <View style={{alignItems:'center',justifyContent:'center'}}>
 
                 <Text style={{ color: '#fff',textAlign:'center', fontSize:22}}> {SubscriptionHeaderTitle('bn') } </Text>
@@ -23,13 +25,14 @@ export default SubscriptionHeader;
 
 
 const art = StyleSheet.create({
-    Box: {
+    box: {
         flexDirection: 'row',
         alignItems: 'center',
         display: 'flex',
-        height: 80, 
+        
         backgroundColor: '#7267D1',
-        paddingHorizontal: 20
+        paddingHorizontal: 20,
+        paddingVertical:5
 
     },
     IconView: {

@@ -4,15 +4,17 @@ import { AntDesign, MaterialIcons,FontAwesome } from '@expo/vector-icons';
 import { ListText } from '../../assets/values';
 
 
-const ListHeader = () => {
+const ListHeader = (props) => {
     return (
-        <View style={styles.Box}>
+        <View style={styles.head}>
             <TouchableOpacity style={styles.IconView}>
-                <AntDesign name="left" size={30} color="#7267D1" />
+                <AntDesign onPress={()=>{
+                        props.navigation.goBack()
+                    }}  name="left" size={30} color="#7267D1" />
             </TouchableOpacity>
 
             <View>
-                <Text style={{fontSize:25, color:'white', marginLeft:10,}}>{ListText('')}</Text>
+                <Text style={{fontSize:22, color:'white', marginLeft:10,}}>{ListText('')}</Text>
             </View>
 
             <TouchableOpacity style={{flexDirection:'row', marginLeft:10}}>
@@ -35,13 +37,14 @@ const ListHeader = () => {
 export default ListHeader;
 
 const styles = StyleSheet.create({
-    Box: {
+    head: {
         flexDirection: 'row',
         alignItems: 'center',
         display: 'flex',
-        height: 80,
         backgroundColor: '#7267D1',
-        paddingTop:20
+        paddingVertical:5,
+        paddingTop:30,
+
     },
     IconView: {
         height: 30,
