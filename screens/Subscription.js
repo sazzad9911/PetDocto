@@ -10,7 +10,7 @@ const Subscription = (props) => {
         <ScrollView>
             
             <View style={{marginHorizontal:10}}>
-            <Silver />
+            <Silver {...props}/>
             <Platinum/>
             <Gold/>
             </View>

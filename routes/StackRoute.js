@@ -6,6 +6,13 @@ import SignIn from './../screens/SignIn';
 import OTP from './../screens/OTP';
 import TabRoute from './TabRoute';
 import SignUp from './../screens/SignUp';
+import DoctorProfile from "../screens/DoctorProfile";
+import Appointment from "../screens/Appointment";
+import AppointmentHeader from "../components/headers/AppointmentHeader";
+import Subscription from "../screens/Subscription";
+import SubscriptionHeader from "../components/headers/SubscriptionHeader";
+import SubscriptionPlan from "../screens/SubscriptionPlan";
+import SubscriptionplanHeader from "../components/headers/SubscriptionplanHeader"
 const Stack = createNativeStackNavigator();
 
 const StackRoute = () => {
@@ -16,6 +23,10 @@ const StackRoute = () => {
         <Stack.Screen options={{headerShown:false}} name="SignUp" component={SignUp} />
         <Stack.Screen options={{headerShown:false}} name="OTP" component={OTP} />
         <Stack.Screen options={{headerShown:false}} name="Dashboard" component={TabRoute} />
+        <Stack.Screen options={{headerShown:false}} name="Doctor Profile" component={DoctorProfile} />
+      <Stack.Screen options={{header:(props)=><AppointmentHeader {...props}/>}} name="Appointment" component={Appointment} />
+      <Stack.Screen options={{header:(props)=><SubscriptionHeader {...props}/>}} name="Subscription" component={Subscription} />
+      <Stack.Screen options={{header:(props)=><SubscriptionplanHeader {...props}/>}} name="SubscriptionPlan" component={SubscriptionPlan} />
       </Stack.Navigator>
     </NavigationContainer>
   );

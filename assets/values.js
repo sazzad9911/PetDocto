@@ -148,3 +148,9 @@ export const SubscriptionHeaderTitle =(language) =>{
     }
     return 'পেটডক্টো সাবস্ক্রিপশন প্লান'
 }
+export const SubscriptionPlanHeaderTitle =(language) =>{
+    if(language=='en'){
+        return 'Checkout'
+    }
+    return 'চেকআউট'
+}
