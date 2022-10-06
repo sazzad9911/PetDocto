@@ -15,10 +15,8 @@ function Search(props) {
                 <View style={art.searchBox}>
                     <TouchableOpacity style={art.searchButton}>
                         <Ionicons style={{
-                            
                             marginTop:5,
                             flex: 1,
-
                         }} name="search" size={24} color='#FFFFFF' />
                     </TouchableOpacity>
                     <TextInput onFocus={() => setValue(false)} onChange={setSearch} placeholder='Search' style={art.inputText}>

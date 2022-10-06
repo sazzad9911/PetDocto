@@ -12,7 +12,12 @@ import AppointmentHeader from "../components/headers/AppointmentHeader";
 import Subscription from "../screens/Subscription";
 import SubscriptionHeader from "../components/headers/SubscriptionHeader";
 import SubscriptionPlan from "../screens/SubscriptionPlan";
-import SubscriptionplanHeader from "../components/headers/SubscriptionplanHeader"
+import SubscriptionplanHeader from "../components/headers/SubscriptionplanHeader";
+import DoctorsAgreement from "../screens/DoctorsAgreement";
+import AgreementOne from "../screens/AgreementOne";
+import AgreementTwo from "../screens/AgreementTwo";
+import AgreementThree from "../screens/AgreementThree";
+
 const Stack = createNativeStackNavigator();
 
 const StackRoute = () => {
@@ -27,6 +32,10 @@ const StackRoute = () => {
       <Stack.Screen options={{header:(props)=><AppointmentHeader {...props}/>}} name="Appointment" component={Appointment} />
       <Stack.Screen options={{header:(props)=><SubscriptionHeader {...props}/>}} name="Subscription" component={Subscription} />
       <Stack.Screen options={{header:(props)=><SubscriptionplanHeader {...props}/>}} name="SubscriptionPlan" component={SubscriptionPlan} />
+      <Stack.Screen options={{headerShown:false}} name="DoctorsAgreement" component={DoctorsAgreement} />
+      <Stack.Screen options={{headerShown:false}} name="AgreementOne" component={AgreementOne} />
+      <Stack.Screen options={{headerShown:false}} name="AgreementTwo" component={AgreementTwo} />
+      <Stack.Screen options={{headerShown:false}} name="AgreementThree" component={AgreementThree} />
       </Stack.Navigator>
     </NavigationContainer>
   );
