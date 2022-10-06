@@ -3,13 +3,7 @@ import { Text, View, Image, StyleSheet, TouchableOpacity } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
 import { styles } from '../assets/styles';
-import {
-    Button,
-    Checkbox,
-    Flex,
-    List,
-    WingBlank,
-} from '@ant-design/react-native'
+import { Checkbox,} from '@ant-design/react-native'
 const AgreeItem = Checkbox.AgreeItem
 
 function DoctorsAgreement(props) {

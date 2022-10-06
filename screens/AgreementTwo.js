@@ -1,15 +1,34 @@
 
-import { Platform ,View,Text,StyleSheet,TextInput } from 'react-native';
+import { Platform ,View,Text,StyleSheet,TextInput,Image } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { styles } from '../assets/styles';
 import Button from '../components/button/Button'
 import React, { useState, useEffect } from 'react';
+import Picker from '../components/Picker';
+import * as ImagePicker from 'expo-image-picker';
+
 
 
 
 function AgreementTwo(props) {
     const [text, onChangeText] = React.useState(null);
-  
+    const [Certificate, onChangeCertificate] = React.useState(null);
+   const [NID, onChangeNID] = React.useState(null);
+   const [Education, onChangeEducation] = React.useState(null);
+   const pickImage = async () => {
+    // No permissions request is necessary for launching the image library
+    let result = await ImagePicker.launchImageLibraryAsync({
+      mediaTypes: ImagePicker.MediaTypeOptions.All,
+      allowsEditing: true,
+      aspect: [4, 3],
+      quality: 1,
+    });
+    //console.log(result);
+
+    if (!result.cancelled) {
+     return result
+    }
+  };
     return (
         <View style={{margin:10}}>
             <Ionicons onPress={() => {
@@ -52,7 +71,18 @@ function AgreementTwo(props) {
 
                 />
             </View>
-            
+            <View style={{alignItems:'center',
+            justifyContent:'center',marginTop:20}}>
+            <Picker onPress={()=>{
+                onChangeCertificate(pickImage())
+            }}/>
+            <Picker onPress={()=>{
+                onChangeNID(pickImage())
+            }}/>
+            <Picker onPress={()=>{
+                onChangeEducation(pickImage())
+            }}/>
+            </View>
             <View style={{alignItems:'center'}}>
                 <Button onPress={() => {props.navigation.navigate('AgreementThree')}} buttonName='NEXT' />
             </View>
