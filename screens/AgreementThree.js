@@ -1,14 +1,14 @@
 import React from 'react';
-import { View,Text,StyleSheet,TextInput,ScrollView } from 'react-native';
+import { View, Text, StyleSheet, TextInput, ScrollView } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { styles } from '../assets/styles';
-import { Checkbox,} from '@ant-design/react-native'
+import { Checkbox, } from '@ant-design/react-native'
 import Button from '../components/button/Button';
 const AgreeItem = Checkbox.AgreeItem
 
 function AgreementThree(props) {
     return (
-        <ScrollView style={{margin:10}}>
+        <ScrollView style={{ margin: 10 }}>
             <Ionicons onPress={() => {
                 props.navigation.goBack()
             }} name="chevron-back-circle" size={35} color="#7267D1" />
@@ -16,47 +16,47 @@ function AgreementThree(props) {
                 <View style={[art.tabCircle, { backgroundColor: "#7267D1", }]}>
                     <Text style={[art.tabText, { color: '#fff', }]}>1 </Text>
                 </View>
-                <View style={[art.tabLine,{backgroundColor: '#7267D1'}]}>
+                <View style={[art.tabLine, { backgroundColor: '#7267D1' }]}>
 
                 </View>
                 <View style={[art.tabCircle, { backgroundColor: "#7267D1" }]}>
                     <Text style={[art.tabText, { color: '#fff', }]}>2 </Text>
                 </View>
-                <View style={[art.tabLine,{backgroundColor: '#7267D1'}]}>
+                <View style={[art.tabLine, { backgroundColor: '#7267D1' }]}>
 
                 </View>
                 <View style={[art.tabCircle, { backgroundColor: "#7267D1" }]}>
                     <Text style={[art.tabText, { color: '#fff', }]}>3 </Text>
                 </View>
             </View>
-            <View style={{alignItems:'center',marginTop:20}}>
-            <Text style={[styles.largeText,{color:'#7267D1'}]}>Terms & Conditions</Text>
+            <View style={{ alignItems: 'center', marginTop: 20 }}>
+                <Text style={[styles.largeText, { color: '#7267D1' }]}>Terms & Conditions</Text>
 
             </View>
             <View>
-                <Text style={[styles.mediumText,{marginTop:20}]}>
+                <Text style={[styles.mediumText, { marginTop: 20 }]}>
                     Why do we use it?
                 </Text>
-                <Text style={[styles.smallText,{}]}>
-                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose.                </Text>
-                <Text style={[styles.mediumText,{marginTop:20}]}>
+                <Text style={[styles.smallText, {}]}>
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose.                </Text>
+                <Text style={[styles.mediumText, { marginTop: 20 }]}>
                     Why do we use it?
                 </Text>
-                <Text style={[styles.smallText,{}]}>
-                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose.                </Text>
-                <Text style={[styles.mediumText,{marginTop:20}]}>
+                <Text style={[styles.smallText, {}]}>
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose.                </Text>
+                <Text style={[styles.mediumText, { marginTop: 20 }]}>
                     Why do we use it?
                 </Text>
-                <Text style={[styles.smallText,{}]}>
-                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose.                </Text>
-            
+                <Text style={[styles.smallText, {}]}>
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose.                </Text>
+
             </View>
-            <AgreeItem style={[styles.mediumText,{ marginTop: 20, paddingRight: 10 }]}>
-                    I Agree with those terms and conditions
-                </AgreeItem>
-<View style={{alignItems:'center',}}>
-    <Button buttonName='SUBMIT'/>
-</View>
+            <AgreeItem style={[styles.mediumText, { marginTop: 20, paddingRight: 10 }]}>
+                I Agree with those terms and conditions
+            </AgreeItem>
+            <View style={{ alignItems: 'center', }}>
+                <Button buttonName='SUBMIT' />
+            </View>
         </ScrollView>
     );
 }
@@ -89,7 +89,7 @@ const art = StyleSheet.create({
     tabLine: {
         height: 4,
         width: 50,
-        
+
 
     },
     nameInput: {
