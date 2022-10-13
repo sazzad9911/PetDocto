@@ -154,3 +154,9 @@ export const SubscriptionPlanHeaderTitle =(language) =>{
     }
     return 'চেকআউট'
 }
+export const DoctorPress =(language) =>{
+    if(language=='en'){
+        return 'DOCTOR'
+    }
+    return 'ডাক্তার'
+}

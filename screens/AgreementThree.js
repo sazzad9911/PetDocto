@@ -55,8 +55,8 @@ function AgreementThree(props) {
                 I Agree with those terms and conditions
             </AgreeItem>
             <View style={{ alignItems: 'center', }}>
-                <Button buttonName='SUBMIT' />
-            </View>
+                <Button {...props} onPress={() => {props.navigation.navigate('DoctorDashboard') }} buttonName='SUBMIT' />
+            </View> 
         </ScrollView>
     );
 }

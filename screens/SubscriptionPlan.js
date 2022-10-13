@@ -42,7 +42,7 @@ export default function SubscriptionPlan(props) {
       <Text style={{marginTop:20}}>
         Pay With
       </Text>
-      <TouchableOpacity onPress={() => {props.navigation.navigate('DoctorsAgreement')}} style={art.payButton}>
+      <TouchableOpacity style={art.payButton}>
       <AntDesign name="shoppingcart" size={20} color="#fff" />
 <Text style={{fontSize:20,color:'#fff',marginLeft:5}}>পে - করুন</Text>
       </TouchableOpacity>

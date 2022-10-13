@@ -12,5 +12,6 @@ export const styles = StyleSheet.create({
     smallText: {
         fontSize:12,
         fontFamily: 'Regular'
-    }
+    },
+    
 })
