@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
         alignItems:'center',
         display:'flex',
         paddingVertical:5,
-        paddingTop:30,
+        
         
     },
     ViewAmount:{

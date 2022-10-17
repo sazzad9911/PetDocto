@@ -9,7 +9,9 @@ function DrProHeader(props) {
     return (
         <View style={{
             flexDirection: 'row',
-            paddingTop: 35
+            paddingTop: 35,
+            justifyContent:'space-between',
+            paddingRight:20,
         }}>
             <View style={art.dox}>
                 <View>

@@ -15,6 +15,7 @@ import HistoryHeader from './../components/headers/HistoryHeader';
 import DoctorPro from "../screens/users/DoctorPro";
 import BottomDr from "../components/bottom/BottomDr";
 import DrProHeader from "../components/headers/Doctor/DrProHeader";
+import DrMenue from "../screens/doctors/DrMenue";
 
 
 
@@ -30,7 +31,7 @@ const DoctorTab = () => {
       <Tab.Screen options={{header:(props)=><CalenderHeader {...props}/>}} name="Calender" component={Calender} />
       <Tab.Screen options={{header:(props)=><ListHeader {...props}/>}} name="DoctorList" component={DoctorList} />
       <Tab.Screen options={{header:(props)=><HistoryHeader {...props}/>}} name="History" component={History} />
-      <Tab.Screen options={{header:(props)=><MenuHeader {...props}/>}} name="Menu" component={Menu} />
+      <Tab.Screen options={{header:(props)=><MenuHeader {...props}/>}} name="DrMenue" component={DrMenue} />
       
 
 

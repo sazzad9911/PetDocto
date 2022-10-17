@@ -31,7 +31,7 @@ const BottomDr = (props) => {
             </TouchableOpacity>
 
             <TouchableOpacity style={{ flex: 1 }}
-                onPress={() => { props.navigation.navigate('Menu') }}>
+                onPress={() => { props.navigation.navigate('DrMenue') }}>
                 <Ionicons name="md-menu" size={30} color="white" />
             </TouchableOpacity>
             <TouchableOpacity style={{

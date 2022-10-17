@@ -1,5 +1,5 @@
 import React from 'react';
-import {View,Text, Dimensions, TouchableOpacity} from 'react-native';
+import {View,Text, Dimensions, TouchableOpacity,ImageBackground} from 'react-native';
 import { textColor } from './../assets/colors';
 import { styles } from './../assets/styles';
 import Input from '../components/Input';
@@ -9,6 +9,7 @@ import Button from '../components/button/Button';
 import SideButton from '../components/button/SideButton';
 import { FontAwesome } from '@expo/vector-icons';
 import { Fontisto } from '@expo/vector-icons';
+import img from '../assets/img.png'
 
 const SignUp = (props) => {
     const [Name, setName] = React.useState(null);
@@ -18,6 +19,7 @@ const SignUp = (props) => {
     const window = Dimensions.get('window')
     return (
         <View>
+        <ImageBackground source={img} style={{height:'100%',width:'100%'}} >
             <View style={{
             alignItems: 'center',
             justifyContent: 'center'
@@ -38,6 +40,7 @@ const SignUp = (props) => {
             
         </View>
         <SideButton {...props} onPress={() => {props.navigation.navigate('SignIn')}} buttonName='Login' />
+        </ImageBackground>
         </View>
 
     );

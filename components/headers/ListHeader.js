@@ -6,11 +6,11 @@ import { ListText } from '../../assets/values';
 
 const ListHeader = (props) => {
     return (
-        <View style={styles.head}>
+        <View style={styles.aaa}>
             <TouchableOpacity style={styles.IconView}>
                 <AntDesign onPress={()=>{
                         props.navigation.goBack()
-                    }}  name="left" size={30} color="#7267D1" />
+                    }}  name="left" size={25} color="#7267D1" />
             </TouchableOpacity>
 
             <View>
@@ -37,13 +37,13 @@ const ListHeader = (props) => {
 export default ListHeader;
 
 const styles = StyleSheet.create({
-    head: {
+    aaa: {
         flexDirection: 'row',
         alignItems: 'center',
         display: 'flex',
         backgroundColor: '#7267D1',
         paddingVertical:5,
-        paddingTop:30,
+        height:55
 
     },
     IconView: {

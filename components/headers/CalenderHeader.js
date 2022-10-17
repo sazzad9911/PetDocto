@@ -5,7 +5,7 @@ import { CelenderText } from '../../assets/values';
 
 const CalenderHeader = (props) => {
     return (
-        <View style={styles.Box}>
+        <View style={styles.bbb}>
 <StatusBar backgroundColor={'#7267D1'} barStyle='light-content'/>
             <TouchableOpacity style={styles.IconView}>
                 <AntDesign onPress={()=>{
@@ -25,13 +25,13 @@ export default CalenderHeader;
 
 
 const styles = StyleSheet.create({
-    Box: {
+    bbb: {
         flexDirection: 'row',
         display: 'flex',      
         alignItems:'center',
         backgroundColor: '#7267D1',
         paddingVertical:5,
-        paddingTop:30,
+        height:55
        
     },
     IconView: {
