@@ -9,7 +9,7 @@ function SelectUser(props) {
     const [Patient, setPatient] = React.useState(false)
 
     return (
-        <View>
+        <View style={{flex:1}}>
         <StatusBar backgroundColor="#7267D1" barStyle="light-content" />
             <View style={{
                 height: 200,
@@ -17,8 +17,8 @@ function SelectUser(props) {
                 borderRadius: 150,
                 backgroundColor: '#7267D1',
                 position: 'absolute',
-                marginLeft:-80,
-                marginTop:-80
+                left:-80,
+                top:-80
             }}>
 
             </View>
@@ -95,8 +95,8 @@ function SelectUser(props) {
                 borderRadius: 150,
                 backgroundColor: '#7267D1',
                 position: 'absolute',
-                bottom:-330,
-                marginLeft:240
+                bottom:-80,
+                right:-80,
                 
                 
             }}>
